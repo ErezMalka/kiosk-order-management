@@ -18,7 +18,7 @@ export default function HomePage() {
     <div className="min-h-screen flex items-center justify-center bg-gray-50" dir="rtl">
       <div className="text-center">
         <h1 className="text-4xl font-bold mb-4 text-gray-900">
-          מערכת ניהול הזמנות קיוסק
+          מערכת ניהול הזמנת קיוסק
         </h1>
         <p className="text-xl text-gray-600 mb-8">
           מעביר לדשבורד...
