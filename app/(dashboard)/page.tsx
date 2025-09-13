@@ -28,7 +28,7 @@ export default function DashboardPage() {
     },
     {
       title: t('dashboard.revenue'),
-      value: '?543,210',
+      value: 'â‚ª543,210',
       icon: DollarSign,
       color: 'text-purple-600',
     },
@@ -62,33 +62,33 @@ export default function DashboardPage() {
 
       <div className="grid gap-6 md:grid-cols-2">
         <div className="bg-white rounded-lg shadow p-6">
-          <h2 className="text-lg font-semibold mb-4">”’…Œ…š „‰˜…š</h2>
+          <h2 className="text-lg font-semibold mb-4">×¤×¢×•×œ×•×ª ××”×™×¨×•×ª</h2>
           <div className="space-y-2">
             <Link
               href="/orders"
               className="block p-3 rounded-lg border hover:bg-gray-50"
             >
-              –”„ „†…š
+              ×¦×¤×” ×‘×”×–×× ×•×ª
             </Link>
             <Link
               href="/supplier/portal"
               className="block p-3 rounded-lg border hover:bg-gray-50"
             >
-              ”…˜ˆŒ ‘”—‰
+              ×¤×•×¨×˜×œ ×¡×¤×§×™×
             </Link>
           </div>
         </div>
 
         <div className="bg-white rounded-lg shadow p-6">
-          <h2 className="text-lg font-semibold mb-4">„†…š €‡˜……š</h2>
+          <h2 className="text-lg font-semibold mb-4">×”×–×× ×•×ª ××—×¨×•× ×•×ª</h2>
           <div className="space-y-2">
             <div className="flex justify-between items-center p-2 border-b">
               <span>ORD-2025-001</span>
-              <span className="text-sm text-gray-500">Œ”‰ 2 ™’…š</span>
+              <span className="text-sm text-gray-500">×œ×¤× ×™ 2 ×©×¢×•×ª</span>
             </div>
             <div className="flex justify-between items-center p-2 border-b">
               <span>ORD-2025-002</span>
-              <span className="text-sm text-gray-500">Œ”‰ 5 ™’…š</span>
+              <span className="text-sm text-gray-500">×œ×¤× ×™ 5 ×©×¢×•×ª</span>
             </div>
           </div>
         </div>
