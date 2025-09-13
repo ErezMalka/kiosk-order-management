@@ -21,7 +21,7 @@ export default function LoginPage() {
 
     try {
       await signIn(email, password)
-      router.push('/')
+      router.push('/dashboard')
     } catch (err) {
       setError(t('auth.loginError'))
     } finally {
@@ -40,10 +40,14 @@ export default function LoginPage() {
         <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
           <div className="rounded-md shadow-sm -space-y-px">
             <div>
+              <label htmlFor="email" className="sr-only">
+                {t('auth.email')}
+              </label>
               <input
                 id="email"
                 name="email"
                 type="email"
+                autoComplete="email"
                 required
                 className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
                 placeholder={t('auth.email')}
@@ -52,10 +56,14 @@ export default function LoginPage() {
               />
             </div>
             <div>
+              <label htmlFor="password" className="sr-only">
+                {t('auth.password')}
+              </label>
               <input
                 id="password"
                 name="password"
                 type="password"
+                autoComplete="current-password"
                 required
                 className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
                 placeholder={t('auth.password')}
@@ -79,6 +87,12 @@ export default function LoginPage() {
             </button>
           </div>
         </form>
+        
+        <div className="text-center text-sm text-gray-600">
+          <p>משתמש לבדיקה:</p>
+          <p>Email: admin@test.com</p>
+          <p>Password: Test1234!</p>
+        </div>
       </div>
     </div>
   )
